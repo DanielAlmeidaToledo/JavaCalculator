@@ -14,14 +14,14 @@ public class Main {
         System.out.println("NOME: Daniel Almeida de Toledo");
         System.out.println("PRONTUÁRIO: BT3031926\n");
 
-        // Calculos simples
+        // Cálculos simples
         facade.calculateAddition(10, 5);
         facade.calculateSubtraction(10, 5);
 
-        // Calculos em lote
-        int[] values = {3, 5, 6, 3, 10};
-        facade.calculateBatchAddition(values);
-        facade.calculateBatchSubtraction(values);
+        // Cálculos em lote com a string "3,5,6,3,10"
+        String valuesString = "3,5,6,3,10";
+        facade.calculateBatchAddition(valuesString);
+        facade.calculateBatchSubtraction(valuesString);
 
         System.out.println("\n=======================================\n");
     }

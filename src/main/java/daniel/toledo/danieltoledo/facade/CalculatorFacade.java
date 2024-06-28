@@ -33,13 +33,13 @@ public class CalculatorFacade {
         System.out.println("Resultado da subtração: " + (a - b));
     }
 
-    public void calculateBatchAddition(int[] values) {
+    public void calculateBatchAddition(String values) {
         BatchCalculationAdapter adapter = new BatchCalculationAdapter(new BatchAdditionFactory());
         Model result = adapter.createBatchCalculation(values);
         System.out.println("Resultado da soma em lote: " + result.getResult());
     }
 
-    public void calculateBatchSubtraction(int[] values) {
+    public void calculateBatchSubtraction(String values) {
         BatchCalculationAdapter adapter = new BatchCalculationAdapter(new BatchSubtractionFactory());
         Model result = adapter.createBatchCalculation(values);
         System.out.println("Resultado da subtração em lote: " + result.getResult());
