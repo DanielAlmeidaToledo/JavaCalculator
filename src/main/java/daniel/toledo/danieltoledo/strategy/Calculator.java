@@ -28,7 +28,7 @@ public class Calculator implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         if (o instanceof Model) {
-            System.out.println("Calculation result: " + ((Model) o).getResult());
+            System.out.println("Resultado do cálculo: " + ((Model) o).getResult());
         }
     }
 }
